@@ -1,0 +1,32 @@
+:root {
+    --link-bg-color-start: rgb(0, 110, 157);
+    --link-bg-color-end: rgba(0, 110, 157, 0.7);
+}
+
+header {
+    background: linear-gradient(to right, var(--link-bg-color-start), var(--link-bg-color-end));
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+nav a {
+    font-size: 20px;
+    padding: .5em 1em;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+    transition: all 1s;
+}
+
+.linkSelecionado {
+    border-bottom: 2px solid white;
+}

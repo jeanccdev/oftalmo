@@ -1,0 +1,31 @@
+<form action="/dashboard/atendimento/update/{{atendimento.idAtendimento}}" method="post" class="form_atendimento">
+    <section class="form_atendimento-anamnese">
+        <b>Anamnese</b>
+        <div>
+            <label for="motivo_consulta">Motivo da Consulta</label>
+            <input type="text" name="motivo_consulta" id="motivo_consulta" value="{{atendimento.motivo_consulta}}">
+        </div>
+        <div>
+            <label for="historico">Histórico Oftalmológico</label>
+            <input type="text" name="historico" id="historico" value="{{atendimento.historico}}">
+        </div>
+        <div>
+            <label for="antecedentes">Antecedentes Pessoais</label>
+            <input type="text" name="antecedentes" id="antecedentes" value="{{atendimento.antecedentes}}">
+        </div>
+        <div>
+            <label for="medicamentos">Medicamentos</label>
+            <input type="text" name="medicamentos" id="medicamentos" value="{{atendimento.medicamentos}}">
+        </div>
+        <div>
+            <label for="alergias">Alergias</label>
+            <input type="text" name="alergias" id="alergias" value="{{atendimento.alergias}}">
+        </div>
+        <div>
+            <label for="oculos_em_uso">Óculos em Uso</label>
+            <input type="text" name="oculos_em_uso" id="oculos_em_uso" value="{{atendimento.oculos_em_uso}}">
+        </div>
+    </section>
+
+    <input type="submit" value="Salvar">
+</form>

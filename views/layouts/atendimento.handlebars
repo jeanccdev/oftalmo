@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OftalmoClin</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/header.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/dashboard/agenda" {{#if linkAgendas}}class="linkSelecionado" {{/if}}>Agendas</a>
+            <a href="/dashboard/pacientes" {{#if linkPacientes}}class="linkSelecionado" {{/if}}>Pacientes</a>
+        </nav>
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
+
+</body>
+
+</html>
